@@ -3,10 +3,10 @@
 from ..data.azure_connection import AzureCon
 
 
-server = "study-server-sql.database.windows.net"
+server = "server_name"
 database = "study-sql"
-username = "gabrieladmin"
-password = "Grc@5129788"
+username = "user_name"
+password = "psd"
 driver = '{ODBC Driver 18 for SQL Server}'
 
 connection_string = f'DRIVER={driver};SERVER={server};DATABASE={database};UID={username};PWD={password}'
@@ -14,4 +14,3 @@ connection_string = f'DRIVER={driver};SERVER={server};DATABASE={database};UID={u
 con = AzureCon()
 
 df = con.connection_az(connection_string)
-print(df.head())
