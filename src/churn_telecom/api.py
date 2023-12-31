@@ -7,7 +7,7 @@ import io
 from data.preprocess.pipeline_preprocess import Processing
 from infra.azure_connection import connection_az
 from infra.result_database import SaveNewData
-from config import azure_db_connection
+from churn_telecom.config.config_credencials import azure_db_connection
 import json
 
 # Criar uma instância do FastAPI
